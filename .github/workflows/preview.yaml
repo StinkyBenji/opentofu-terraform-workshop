@@ -47,6 +47,6 @@ jobs:
           run: terramate run --changed -- tofu init
 
         - name: Run OpenTofu Plan
-          if: steps.list-changed-stacks.outputs.stdout\
+          if: steps.list-changed-stacks.outputs.stdout
           run: terramate run --changed -- tofu plan
 
